@@ -38,4 +38,4 @@ jobs:
       env:
         SCREEPS_API_TOKEN: ${{ secrets.SCREEP_API_TOKEN }}
         SCREEPS_API_BRANCH: cannoli/main
-      run: npm push
+      run: npm run push
