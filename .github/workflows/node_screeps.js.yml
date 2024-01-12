@@ -43,9 +43,6 @@ jobs:
         node-version: ${{ env.node-version }}
         cache: 'npm'
     - run: yarn install --frozen-lockfile
-    - run: npm run build --if-present
-    - run: npm run lint --if-present
-    - run: npm test --if-present
     - name: Deploy to Screeps
       env:
         SCREEPS_API_TOKEN: ${{ secrets.SCREEP_API_TOKEN }}

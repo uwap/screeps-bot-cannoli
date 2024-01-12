@@ -8,7 +8,7 @@
     "build": "npx spack",
     "lint": "npx eslint src/",
     "prepare": "husky install",
-    "push": "node ./upload.js"
+    "push": "yarn run build && node ./upload.js"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.63",
