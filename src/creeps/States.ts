@@ -1,4 +1,4 @@
-import { CreepAction } from "./Action";
+import { CreepAction } from "./logic/Action";
 
 declare global {
     interface CreepMemory {
