@@ -1,0 +1,1 @@
+export type CreepAction = (creep: Creep, next: () => void) => void;
