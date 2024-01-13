@@ -1,5 +1,5 @@
 import { registerProcess } from "../processes";
-import { states } from "./States";
+import { states } from "./logic/States";
 import { fillSpawn } from "./logic/fillSpawn";
 import { mineEnergy } from "./logic/mineEnergy"
 import { upgradeController } from "./logic/upgradeController";

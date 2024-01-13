@@ -4,6 +4,8 @@ import "./creeps/harvester";
 registerProcess(() => {
     for (const s in Game.spawns) {
         const spawn = Game.spawns[s];
+        spawn.spawnCreep([MOVE, WORK, CARRY], 'harvester3');
+        spawn.spawnCreep([MOVE, WORK, CARRY], 'harvester2');
         spawn.spawnCreep([MOVE, WORK, CARRY], 'harvester1');
     }
 })
