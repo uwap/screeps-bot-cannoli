@@ -1,4 +1,5 @@
 interface Process {
+    name: string,
     fn: () => void,
     freq: number
 }
@@ -10,8 +11,8 @@ declare global {
 
 globalThis.processes = globalThis.processes || [];
 
-export function registerProcess(proc: () => void, freq: number = 1) {
-    globalThis.processes.push({ fn: proc, freq });
+export function registerProcess(name: string, proc: () => void, freq: number = 1) {
+    globalThis.processes.push({ name, fn: proc, freq });
 }
 
 export function runProcesses() {
